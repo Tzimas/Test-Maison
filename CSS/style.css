@@ -1,4 +1,18 @@
 /*
 Style Reset
 */
-    html
+
+    body{
+        background: gray;
+        text-align: center;
+    }
+        background: turquoise;
+    text-align: center;
+
+    ul{
+        display: inline-block
+    }
+
+    header :first-child{
+        max-width: 5rem;
+    }
