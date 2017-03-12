@@ -1,18 +1,150 @@
+/* Importer un fichier CSS*/
+    @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+    @import url(https://fonts.googleapis.com/css?family=Gravitas+One|Oswald:400,600,700 rel="stylesheet");
+
 /*
 Style Reset
 */
 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    html{
+        font-size: 62.5%;
+    }
+
     body{
-        background: gray;
+        font-size: 1.5rem;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        background: #bfbfbf;
+    }
+
+    h1, h2,{
+        text-transform: uppercase;
+    }
+
+    h2{
+        font-size: 10rem;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+     nav ul, 
+    main section:first-child,
+    main section:nth-child(2) p,
+    main section:last-child,
+    footer section{
+        max-width: 95rem;
+        margin: auto;
+    }
+
+/*
+Style header
+*/
+
+    header{
         text-align: center;
-    }
-        background: turquoise;
-    text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
 
-    ul{
-        display: inline-block
+    }   
+
+    header [alt="tête de batman avec des formes géométriques"] {
+        width: 7rem;
+        padding: 2rem;
     }
 
-    header :first-child{
-        max-width: 5rem;
+    nav{
+        background: black;
+        padding: 1rem;
+        text-align: right;
+        padding: 2rem;
+    }
+
+    li{
+        display: inline-block; 
+        margin-right: 2rem;
+        border-right: .1rem solid white;
+        padding-right: 1rem;
+    }
+
+    a{
+        color: white;
+        border-left: .2 solid white;
+    }
+
+    nav ul{
+        position: relative;
+    }
+    
+    nav li:first-child{
+        position: absolute;
+        left: 0;
+    }
+
+    header section{
+        background:#e0b93f;
+        padding: 3rem;
+    }
+
+    header [alt="Grand logo tête batman formes géométrique "]{
+        max-width: 40%;
+        margin-bottom: 6rem;
+    }
+
+/*
+Main - Section1
+*/
+
+    main p:first-of-type{
+    text-align: justify;
+    column-count:3;
+    }
+
+        main :first-child{
+            margin: 3rem;
+        }
+
+/*
+Main Section2
+*/
+
+    main section:nth-child(2){
+        background: #e0b93f;
+        padding:3rem;
+        position: relative;
+    }
+
+    main section:nth-child(2) article{
+        display: inline-block;
+        margin: 3rem;
+        max-width: 25%;
+        position: relative;
+    }
+
+    main section:nth-child(2) a{
+        position: absolute;
+        background: rgba(170, 171, 161, 0.7);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s;
+    }
+
+    main section:nth-child(2) a:hover{
+        opacity: 1;
     }
