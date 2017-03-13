@@ -1,0 +1,88 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+@import url(https://fonts.googleapis.com/css?family=Gravitas+One|Oswald:400,600,700 rel="stylesheet");
+
+
+/*Style Reset*/
+
+
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    html{
+        font-size: 62.5%;
+    }
+
+    body{
+        font-size: 1.5rem;
+    }
+
+    header, main, footer{
+        margin: 2rem auto;
+        padding: 2rem;
+        max-width: 95rem;
+    } 
+
+    h1, h2{
+        font-family: "Gravitas one", sans-serif;
+        text-transform: uppercase;
+    }
+
+    nav, p, form{
+        font-family: "Oswald", sans-serif
+    }
+
+/*HEADER*/
+    /*Reduire la premiere image*/
+    header{
+        background:#f3d00c;
+
+    }
+
+    header:first-child section{
+        /*Pourquoi pas tout le fond*/
+        background: #d4d3d3;
+        text-align: center;
+    }
+
+    section:first-child img{
+        width: 7rem;
+    }
+
+    /* Faire la navigation*/
+
+    nav{
+        background: black;
+        color: white;
+        padding: 2rem;
+        position: relative;
+        text-align: right;
+
+    }
+
+       a{
+        color: white;
+        text-decoration: none;
+    }
+
+    li{
+        display: inline-block;
+        border-right: .1rem solid white;
+        padding: 1rem;
+    }
+
+    nav li:first-child{
+        position: absolute;
+        left:2rem;     
+    }
+
+    
+
+ 
+
+
+
+
