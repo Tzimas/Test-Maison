@@ -18,17 +18,24 @@
 
     body{
         font-size: 1.5rem;
+        background: #eee;
     }
 
     header, main, footer{
-        margin: 2rem auto;
-        padding: 2rem;
+        margin: auto;
         max-width: 95rem;
     } 
 
     h1, h2{
         font-family: "Gravitas one", sans-serif;
         text-transform: uppercase;
+        
+    }
+
+    h2{
+        font-size: 7rem;
+        text-decoration: overline;
+        margin-bottom: 4rem;
     }
 
     nav, p, form{
@@ -38,7 +45,7 @@
 /*HEADER*/
     /*Reduire la premiere image*/
     header{
-        background:#f3d00c;
+        background:#f3a60c;
 
     }
 
@@ -57,13 +64,14 @@
     nav{
         background: black;
         color: white;
-        padding: 2rem;
         position: relative;
         text-align: right;
-
+        margin-bottom: 4rem;
+        padding: 1.5rem;
     }
 
        a{
+        text-transform: uppercase;
         color: white;
         text-decoration: none;
     }
@@ -79,6 +87,75 @@
         left:2rem;     
     }
 
+    /* Réduire la deuxième image*/
+    [src="img/logoGrand.png"]{
+        width: 33rem;
+        margin: auto;
+        display: inherit;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 7rem;
+        padding-bottom: 4rem;
+        margin-top: 4rem;
+    }
+
+/*
+main
+*/
+
+    /*History*/
+
+        main section:first-child{
+            background: #d4d3d3;
+            padding: 4rem;
+        }
+
+        main section:first-child p{
+            column-count: 2;
+            text-align: justify;
+            max-width: 80%;
+            margin: auto;
+            padding: 2rem;
+        }
+
+    /* Pictures */
+
+        main section:nth-child(2){
+            background: #f3a60c;
+            padding: 4rem;
+        }
+
+        main section:nth-child(2) img{
+            max-width: 28%;
+            max-width: 28%;
+            padding: 2rem 1rem;
+        }
+
+     /* Contact*/
+
+     main section:nth-child(3){
+         background: #d4d3d3;
+         padding: 2rem;   
+     }
+
+     input:not([type="submit"]), textarea{
+         background: blue;
+     }
+
+
+
+
+
+     /* Footer*/
+
+     footer{
+         background: black;
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+     }
     
 
  
